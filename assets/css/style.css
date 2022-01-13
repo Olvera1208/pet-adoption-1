@@ -13,3 +13,14 @@
   .container {
     padding: 2px 16px;
   }
+
+  nav {
+    margin: 3%;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+}
+.result-contact-page{
+    margin-top: 6%
+}
