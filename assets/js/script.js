@@ -1,8 +1,9 @@
 console.log("document ready")
 var submitBtn = document.querySelector("#submit-btn");
 var searchInput = document.querySelector("#searchInput");
-var animalType = document.querySelector("#animal-type");
-var optionEl = document.querySelector("option");
+var animalType = document.querySelector("#type");
+var size = document.querySelector("#size");
+
 var cityArray = [];
 
 console.log("document is ready");
@@ -12,6 +13,12 @@ function getUserInput() {
 
     var searchedLocation = searchInput.value;
     console.log(searchedLocation);
+    
+    var animalType = animalType.value;
+    console.log(animalType);
+
+    // var animalSize = size.value;
+    // console.log(animalSize);
 
     // store into local storage
     // cityArray.push(searchedLocation);
