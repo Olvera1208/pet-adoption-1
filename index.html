@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./skeleton/normalize.css">
-    <link rel="stylesheet" href="./skeleton/skeleton.css"> 
+    <link rel="stylesheet" href="./skeleton/skeleton.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Pet Adoption</title>
-    <head>
-        <body>
-<!--put navbar here-->
 
-<div class="container">
-  <nav class="row">
-    <div class="five columns">petFinder</div>
-    <div class="seven columns link" style="text-align: end;">
-        <a href="">About Us</a>
-    </div>
-  </nav>
+    <head>
+
+    <body>
+        <!--put navbar here-->
+
+        <div class="container">
+            <nav class="row">
+                <div class="five columns">petFinder</div>
+                <div class="seven columns link" style="text-align: end;">
+                    <a href="">About Us</a>
+                </div>
+            </nav>
+
+
+
+            <div class="row">
+                <div class="three columns topnav">
+                    <input type="text searchInput" id="searchInput" placeholder="Search">
+                </div>
+
+
+
+                <div class="three columns">
+                    <div class="dropdown ">
+                        <select id="type" class="dropbtn">
+                            <option value="type" disabled selected>Select Animal Type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="two columns">
+                    <div class="dropdown ">
+                        <select id="size" class="dropbtn">
+                            <option value="animal" disabled selected>Size:</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">Xlarge</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="two columns">
+                    <div class="dropdown ">
+                        <select id="gender" class="dropbtn">
+                            <option value="animal" disabled selected>Gender:</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="two columns">
+
+                    <button class="button-primary dropbtn dropdown" id="submit-btn">Search</button>
+                </div>
 
   <div class="row">
     <div class="topnav">
@@ -26,14 +75,6 @@
       </div>
   </div>
 
-  <div class="row">
-    <div class="four columns">
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
             </div>
           </div>
     </div> 
