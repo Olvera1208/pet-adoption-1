@@ -1,3 +1,7 @@
+//var type = document.querySelector('#type');
+//var size = document.querySelector('#size');
+//var gender = document.querySelector('#gender');
+
 fetch('https://api.petfinder.com/v2/animals', {
   method: 'GET', 
   headers: {
@@ -11,3 +15,23 @@ fetch('https://api.petfinder.com/v2/animals', {
 .catch((error) => {
   console.error('Error:', error);
 });
+
+// var getUserInput = function (type, size, gender) {
+//    var apiUrl = 'https://api.petfinder.com/v2/animals/types/{' + type + '}/size/{' + size + '}/gender/{' + gender + '}';
+//  
+//    fetch(apiUrl)
+//      .then(function (response) {
+//        if (response.ok) {
+//          response.json().then(function (data) {
+//            console.log(data)
+//          });
+//       } else {
+//          console.log('Error: ' + response.statusText);
+//        }
+//      })
+//      .catch(function (error) {
+//       console.log('Unable to connect to PetFinder');
+//      });
+//  };
+//
+//getUserInput(); 
