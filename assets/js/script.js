@@ -14,8 +14,8 @@ function getUserInput() {
     console.log(searchedLocation);
 
     // store into local storage
-    cityArray.push(searchedLocation);
-    localStorage.setItem("nameOfCity", JSON.stringify(cityArray));
+    // cityArray.push(searchedLocation);
+    // localStorage.setItem("nameOfCity", JSON.stringify(cityArray));
 
     // var animalType = animalType.value;
     // console.log(animalType);
