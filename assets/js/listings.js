@@ -1,7 +1,3 @@
-//var type = document(./index.html).querySelector('#type');
-//var size = document(./index.html).querySelector('#size');
-//var gender = document(./index.html).querySelector('#gender');
-
 fetch('https://api.petfinder.com/v2/animals', {
   method: 'GET', 
   headers: {
@@ -16,8 +12,8 @@ fetch('https://api.petfinder.com/v2/animals', {
   console.error('Error:', error);
 });
 
-// var getUserInput = function (type, size, gender) {
-//    var apiUrl = 'https://api.petfinder.com/v2/animals/types/{' + type + '}/size/{' + size + '}/gender/{' + gender + '}';
+// var getUserInput = function (location, type, size, gender) {
+//    var apiUrl = 'https://api.petfinder.com/v2/animals/location/{' + location + '}/types/{' + type + '}/size/{' + size + '}/gender/{' + gender + '}';
 //  
 //    fetch(apiUrl)
 //      .then(function (response) {
