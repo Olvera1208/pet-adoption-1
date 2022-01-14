@@ -1,6 +1,6 @@
-//var type = document.querySelector('#type');
-//var size = document.querySelector('#size');
-//var gender = document.querySelector('#gender');
+//var type = document(./index.html).querySelector('#type');
+//var size = document(./index.html).querySelector('#size');
+//var gender = document(./index.html).querySelector('#gender');
 
 fetch('https://api.petfinder.com/v2/animals', {
   method: 'GET', 
