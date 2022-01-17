@@ -65,6 +65,9 @@ function getAnimals(animalType) {
                 "s. Open the console to view the data."
             );
             console.log("Success:", data);
+            for(i=0; i <= 19; i++) {
+                console.log("Success", data);
+            }
         })
         .catch((error) => {
             // Don't try again. Something unexpected is wrong here.
