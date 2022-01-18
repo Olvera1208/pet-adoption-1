@@ -5,84 +5,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Island+Moments&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./skeleton/normalize.css">
     <link rel="stylesheet" href="./skeleton/skeleton.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Pet Adoption</title>
 
-    <head>
-
-    <body>
-        <!--put navbar here-->
-
-        <div class="container">
-            <nav class="row">
-                <div class="five columns">petFinder</div>
-                <div class="seven columns link" style="text-align: end;">
-                    <a href="">About Us</a>
-                </div>
-            </nav>
-
-
-
-            <div class="row">
-                <div class="three columns topnav">
-                    <input type="text searchInput" id="searchInput" placeholder="Search">
-                </div>
-
-
-
-                <div class="three columns">
-                    <div class="dropdown ">
-                        <select id="type" class="dropbtn">
-                            <option value="" disabled selected>Select Animal Type</option>
-                            <option value="dog">Dog</option>
-                            <option value="cat">Cat</option>
-
-                        </select>
-                    </div>
-                </div>
-
-                <div class="two columns">
-                    <div class="dropdown ">
-                        <select id="size" class="dropbtn">
-                            <option value="" disabled selected>Size:</option>
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="xlarge">Xlarge</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="two columns">
-                    <div class="dropdown ">
-                        <select id="gender" class="dropbtn">
-                            <option value="" disabled selected>Gender:</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="two columns">
-
-                    <button class="button-primary dropbtn dropdown" id="submit-btn">Search</button>
-                </div>
-
-                <div class="row">
-                    <div class="topnav">
-                        <input type="text searchInput" id="searchInput" placeholder="Search">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-
-        <!--footer-->
-        <footer>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
 </head>
+
+<body>
+
+
+    <div class="container">
+        <nav class="row">
+            <div class="logo">petFinder</div>
+
+        </nav>
+
+
+
+        <div class="row first-div">
+            
+            <div class="three columns">
+                <div class="dropdown ">
+                    <select id="type" class="dropbtn">
+                        <option value="" disabled selected>Select Animal Type</option>
+                        <option value="dog">Dog</option>
+
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="three columns">
+                <div class="dropdown ">
+                    <select id="size" class="dropbtn">
+                        <option value="" disabled selected>Size:</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">Xlarge</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="three columns">
+                <div class="dropdown ">
+                    <select id="gender" class="dropbtn">
+                        <option value="" disabled selected>Gender:</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="three columns">
+
+                <button class="button-primary dropbtn dropdown" id="submit-btn">Search</button>
+            </div>
+
+
+
+        </div>
+        <div class="row">
+            <figure class="twelve columns">
+                <img src="assets/image/french-bulldog-g3db908e9a_1920.jpg" alt="dog" style="width: 95%;">
+            </figure>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
