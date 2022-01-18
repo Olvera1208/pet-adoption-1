@@ -1,3 +1,11 @@
+var divContainer = document.querySelector("#cardContainer");
+var searchParamsArr = document.location.search.split('&');
+// Get the query and format values
+// var selectedSize = searchParamsArr[2].split('=').pop();
+// var seletedGender = searchParamsArr[3].split('=').pop();
+// console.log(selectedSize);
+// console.log(seletedGender);
+
 var id = "ZcKtUZMgFFfliTA8WJ44rxuXNaeRIBxRujgC6Qr091KR3cHQax";
 var secret = "Ox43xtVk71ClFsfzk2T4UpxLzIYAXfJCyLPO8iEq";
 
@@ -65,8 +73,26 @@ function getAnimals(animalType) {
                 "s. Open the console to view the data."
             );
             console.log("Success:", data);
-            for(i=0; i <= 19; i++) {
-                console.log("Success", data);
+
+
+            for (i = 0; i < 10; i++) {
+                var divEl = document.createElement("div");
+                divEl.classList.add("three", "column", "card");
+                divEl.innerHTML =
+
+                    '<strong>Name:</strong> ' + data.animals[i].name + '<br/>'
+                '<strong>Breed:</strong> ' + data.animals[i].breeds.primary + '<br/>';
+                var imgEl = document.createElement("img");
+                imgEl.src = data.animals[i].photos[0].small;
+
+                var description = document.createElement("div");
+                description.textContent = data.animals[i].description;
+
+                divContainer.append(divEl);
+                divEl.append(imgEl);
+                divEl.append(description);
+
+
             }
         })
         .catch((error) => {
