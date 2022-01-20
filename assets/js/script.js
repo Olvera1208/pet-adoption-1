@@ -1,12 +1,8 @@
 var animalTypeEl = $("#type");
 var genderEl = $("#gender");
-var cityArray = [];
 console.log("document is ready");
 
 function getUserInput() {
-
-    var searchedLocation = $("#searchInput").val();
-    console.log(searchedLocation);
 
     var animalType = animalTypeEl.val();
     console.log(animalType);
@@ -18,10 +14,9 @@ function getUserInput() {
     console.log(animalGender);
 
     // store into local storage
-    cityArray.push(searchedLocation);
-    localStorage.setItem("nameOfCity", JSON.stringify(cityArray));
+    
 
-    var resultPageURL = './listings.html?q=' + searchedLocation + '&format=' + animalType + '&format=' + animalSize + '&format=' + animalGender;
+    var resultPageURL = './listings.html?' + 'type=' + animalType + '&size=' + animalSize + '&gender=' + animalGender;
     console.log(resultPageURL);
 
     location.assign(resultPageURL);

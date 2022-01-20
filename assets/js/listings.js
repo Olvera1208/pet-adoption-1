@@ -1,5 +1,7 @@
 var divContainer = document.querySelector("#cardContainer");
 var searchParamsArr = document.location.search.split('&');
+
+
 // Get the query and format values
 // var selectedSize = searchParamsArr[2].split('=').pop();
 // var seletedGender = searchParamsArr[3].split('=').pop();
@@ -42,10 +44,8 @@ function getAnimals(animalType) {
         return;
     }
 
-    console.log("Fetching animals with type='" + animalType + "'");
-
     // Token is good, request animals
-    fetch("https://api.petfinder.com/v2/animals?type=" + animalType, {
+    fetch("https://api.petfinder.com/v2/animals" + document.location.search, {
             method: "GET",
             headers: {
                 Authorization: "Bearer " + petFinderToken,
@@ -83,15 +83,16 @@ function getAnimals(animalType) {
                     '<strong>Name:</strong> ' + data.animals[i].name + '<br/>'
                 '<strong>Breed:</strong> ' + data.animals[i].breeds.primary + '<br/>';
                 var imgEl = document.createElement("img");
-                imgEl.src = data.animals[i].photos[0].small;
+                imgEl.src = data.animals[i].photos[0];
 
                 var description = document.createElement("div");
                 description.textContent = data.animals[i].description;
-
+                
                 divContainer.append(divEl);
                 divEl.append(imgEl);
                 divEl.append(description);
 
+                
 
             }
         })
