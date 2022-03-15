@@ -1,8 +1,7 @@
 # pet-adoption
 
 # Links:
-Deploy:
-Github:
+Deploy:https://lilythomas28.github.io/pet-adoption/
 
 # Technologies:
 HTML
